@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="form-title">Contact form</h1>
+      <p>Please fill in your information and well be sending yuor order</p>
+      <form class="order-form">
+        <label class="form-label">
+          <span class="label-caption">Your name</span>
+          <input
+            class="form-input-userName"
+            type="text"
+            name="user-first-name"
+            placeholder="first name"
+            autofocus
+          />
+          <input
+            class="form-input-userName"
+            type="text"
+            name="user-last-name"
+            placeholder="last-name"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Your email</span>
+          <input
+            class="form-input-userEmail"
+            type="email"
+            name="user-email"
+            placeholder="your_mail@mail.mail"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Phone*</span>
+          <input
+            class="form-input-userPhone"
+            type="tel"
+            name="user-phone"
+            required
+            placeholder="000"
+          />
+          <input
+            class="form-input-userPhone"
+            type="tel"
+            name="user-phone"
+            required
+            placeholder="000"
+          />
+          <input
+            class="form-input-userPhone"
+            type="tel"
+            name="user-phone"
+            required
+            placeholder="000"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Message subject*</span>
+          <select class="form-select" size="1" required>
+            <option value="order" selected>Order</option>
+            <option value="feedback">Feedback</option>
+            <option value="complaint">Complaint</option>
+          </select>
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Message*</span>
+          <textarea name="message" maxlength="50" required></textarea>
+        </label>
+        <button class="submit-btn" type="submit">SUBMIT FORM</button>
+      </form>
+    </main>
+  </body>
+</html>

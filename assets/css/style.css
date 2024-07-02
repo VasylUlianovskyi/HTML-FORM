@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../img/nature-landscape-with-black-sand-on-beach.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: azure;
+}
+
+main {
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 15px;
+}
+
+.label-caption {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  flex: 1 1 25%
+}
+
+.form-input,
+.form-input-userPhone,
+.form-input-userName,
+.form-input-userEmail,
+.form-select,
+textarea {
+
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex: 1 1 65%;
+  outline: none;
+}
+
+.form-input-userName {
+  flex: 1 1 30%;
+  margin-right: 4%;
+  box-sizing: border-box;
+}
+
+.form-input-userPhone {
+  width: 32%;
+  margin-right: 2%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background: none;
+  font-weight: bold;
+  color: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
