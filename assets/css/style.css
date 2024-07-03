@@ -105,3 +105,11 @@ textarea {
 .submit-btn:hover {
   background: rgba(255, 255, 255, 0.5);
 }
+
+.valid {
+  background-color: rgb(166, 250, 222);
+}
+
+.invalid {
+  background-color: rgb(238, 143, 162);
+}
