@@ -42,16 +42,32 @@ p {
 .form-label {
   margin-bottom: 15px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .label-caption {
   margin-bottom: 5px;
   font-weight: bold;
-  flex: 1 1 20%
+  flex: 1 1 15%;
+}
+
+.user-phone-inputs {
+  display: flex;
+  flex: 1 2 auto;
+  width: 82%;
+  justify-content: space-between;
+}
+
+.form-input-userPhone {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
 }
 
 .form-input,
-.form-input-userPhone,
 .form-input-userName,
 .form-input-userEmail,
 .form-select,
@@ -61,23 +77,25 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+  flex: 1 2 auto;
+  width: 80%;
 }
 
 .form-input-userName {
-  flex: 1 2 48%;
   margin-right: 2%;
+  width: 38%;
 }
 
 .form-input-userEmail,
 .form-select,
 .message {
-  flex: 1 2 100%;
   margin-right: 2%;
+  width: 80%;
 }
 
 .form-input-userPhone {
-  max-width: 25.4%;
   margin-right: 2%;
+  width: 24.3%;
 }
 
 .req {
@@ -112,4 +130,30 @@ textarea {
 
 .invalid {
   background-color: rgb(238, 143, 162);
+}
+
+@media (max-width: 555px) {
+  .form-label {
+    flex-direction: column;
+  }
+
+  .form-input,
+  .form-input-userName,
+  .form-input-userEmail,
+  .form-select,
+  .message,
+  textarea {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .user-phone-inputs {
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .form-input-userPhone {
+    width: 100%;
+  }
 }
