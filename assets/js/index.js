@@ -1,8 +1,8 @@
 "use strict";
 
 const INPUTS_REGULAR = {
-  "user-first-name": /^[A-Za-zА-Яа-яІіЇїЄєҐґ]{1,20}$/,
-  "user-last-name": /^[A-Za-zА-Яа-яІіЇїЄєҐґ]{1,20}$/,
+  "user-first-name": /^[A-Z][a-z]{1,20}$/,
+  "user-last-name": /^[A-Z][a-z]{1,20}$/,
   "user-email": /^.{5,15}@.+$/,
   "user-phone-1": /^\d{3}$/,
   "user-phone-2": /^\d{3}$/,
