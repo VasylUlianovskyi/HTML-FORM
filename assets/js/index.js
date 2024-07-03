@@ -3,7 +3,7 @@
 const INPUTS_REGULAR = {
   "user-first-name": /^[A-Za-zА-Яа-яІіЇїЄєҐґ]{1,20}$/,
   "user-last-name": /^[A-Za-zА-Яа-яІіЇїЄєҐґ]{1,20}$/,
-  "user-email": /^.+@.+$/,
+  "user-email": /^.{5,15}@.+$/,
   "user-phone-1": /^\d{3}$/,
   "user-phone-2": /^\d{3}$/,
   "user-phone-3": /^\d{4}$/,
